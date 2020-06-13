@@ -90,6 +90,7 @@ do_install() {
         cp $DTB $INSTALL_DIR
     fi
 
+    rm -rf $INSTALL_DIR/lib
     make modules_install INSTALL_MOD_PATH=$INSTALL_DIR
 }
 
